@@ -1,0 +1,9 @@
+<html>
+<head>
+</head>
+<body>
+<!simpletag>
+<p>i want to print euro&euro;</p>
+
+</body>
+</html>

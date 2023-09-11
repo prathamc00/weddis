@@ -1,0 +1,21 @@
+<HTML>
+
+<Head>
+<title>list page</title>
+  </head>
+
+<body>
+<ul>
+<li>item 1</li>
+<li>item 2</li>
+<li>item3</li>
+<li>item4</li></ul>
+<ol>
+<li>item 1</li>
+<li>item 2</li>
+<li>item3</li>
+<li>item4</li></ol>
+
+   </body>
+
+</HTML>

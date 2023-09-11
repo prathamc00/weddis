@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    
+    <title>Document</title>
+<style>
+    #container{
+
+           background-color: rgb(33, 238, 22);
+           width: 300px;
+               }
+    .inputtext{
+        width:250px;
+        margin:10px ;
+    }
+</style>
+
+</head>
+<body>
+    <div id="container">
+    
+        <input type="text" id="no1" class="inputtext" placeholder="Number 1">
+        <br>
+        <input type="text" id="no2" class="inputtext" placeholder="Number 2">
+        <br>
+        <hr>
+        <button onclick="calculate('add')">Add</button>
+        <button onclick="calculate('sub')">Subtract</button>
+        <button onclick="calculate('mul')">Multiply</button>
+        <button onclick="calculate('div')">Divide</button>
+        <div id="result"></div>  
+    </div>
+    
+    <script>
+        function calculate(opr)
+        {
+            no1 = parseInt(document.getElementById("no1").value);
+            no1 = parseInt(document.getElementById("no2").value);
+            var result;
+            switch (opr)
+            {
+                case "add" : result = no1+no2;
+                break;
+                case "sub" : result = no1-no2;
+                break;
+                case "mul" : result = no1*no2;
+                break;
+                case "div" : result = no1/no2;
+                break;
+            }
+            document.getElementById("result").innerText="The resullt is:" + result;
+        }
+    </script>
+</body>
+</html>

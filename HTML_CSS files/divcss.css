@@ -1,0 +1,44 @@
+header{
+    background-color: rgb(234, 80, 80);
+    text-align: center;
+}
+
+section{
+    width : 800px;
+    height: 500px;
+    border: 3px;
+    float: left;
+    margin-top: 40px ;
+    border-color: black;
+    text-align: justify;
+    font-size: 28px;
+    line-height: 50px;
+}
+.mainbox{
+    width: 1300px;
+    height:600px;
+    border: 5px dashed saddlebrown;
+
+}
+.bigbox{
+    width: 600px;
+    height:600px;
+    border: 3px solid rgb(0, 0, 0);
+    float:right;
+}
+.smallbox{
+    width: 550px;
+    height:250px;
+    border: 5px solid rgb(255, 1, 1);
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+#i1,#i2{
+    width: 500px;
+    height:250px;
+}
+
+p{
+margin-left: 30px;
+}

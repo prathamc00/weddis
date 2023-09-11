@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #options {
+            background-color: rgb(249, 244, 98);
+        }
+
+        .quiz-container {
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        .question {
+            background-color: rgb(79, 205, 188);
+            font-weight: bold;
+            font-size:larger;
+        }
+
+        .options label {
+            display: block;
+        }
+
+        .result {
+            margin-top: 10px;
+        }
+
+        .result.Correct {
+            color: green;
+        }
+
+        .result.Incorrect {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="quiz-container">
+        <h1>Quiz</h1>
+        <div id="question">What is the capital of France?</div>
+        <div id="options">
+            <input type="radio" name="option" id="o1">
+            <label>Paris</label>
+            <br>
+            <input type="radio" name="option" id="o2">
+            <label>London</label>
+            <br>
+            <input type="radio" name="option" id="o3">
+            <label>Berlin</label>
+            <br>
+            <input type="radio" name="option" id="o4">
+            <label>Rome</label>
+            <br>
+        </div>
+        <button onclick="checkAnswer()">Submit</button>
+        <div id="result"></div>
+    </div>
+
+    <script>
+
+        function checkAnswer() {
+            var ans1 = document.querySelector("input[id ='o1']").checked;
+            var ans2 = document.querySelector("input[id ='o2']").checked;
+            var ans3 = document.querySelector("input[id ='o3']").checked;
+            var ans4 = document.querySelector("input[id ='o4']").checked;
+            if (ans1) {
+                document.getElementById("result").style.color = "green";
+                document.getElementById("result").innerText = "Correct"
+            }
+            else {
+                document.getElementById("result").style.color = "red";
+                document.getElementById("result").innerText = "Incorrect"
+            }
+
+        }
+
+
+    </script>
+</body>
+
+</html>

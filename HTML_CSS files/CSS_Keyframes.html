@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Keyframe</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(210, 241, 9);
+            position: absolute;
+            border-radius: 100%;
+            left: 0;
+            top: 0;
+            animation-name: moveObject ;
+            animation-duration: 4s;
+            animation-delay: 0s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes moveObject {
+            0% { background-color: red;
+                left: 0;
+                top: 0;
+            }
+
+            10% { background-color: yellow;
+                left: 1400px;
+                top: 0;
+            }
+
+            20% { background-color: green ;
+                left: 1400px;
+                top: 600px;
+            }
+
+            30% { background-color: red;
+                left: 600px;
+                top: 600px;
+            }
+
+            40% { background-color: yellow ;
+                left: 600px;
+                top: 600px;
+            }
+
+            50% { background-color: green;
+                right: 600px;
+                bottom: 400px;
+            }
+
+            100% { background-color: red ;
+                left: 0px;
+                top: 600px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <center>
+            <br>
+            <br>
+            Adithya
+            <br>
+        </center>
+    </div>
+</body>
+
+</html>

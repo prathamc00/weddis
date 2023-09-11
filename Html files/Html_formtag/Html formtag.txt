@@ -1,0 +1,63 @@
+<html>
+<head>
+</head>
+<body bgcolor="grey"> 
+<h1> Please Enter your Details and Submit</h1>
+<form>
+<label for="fname">First name:</label>
+<input type="text" id="fname" name="fname">
+<br>
+<br>
+
+<label for="Iname">Last name:</label> 
+<input type="text" id="name" name="Iname">
+<br> 
+<hr>
+
+<p> <b>Select Gender</b></p>
+
+<input type="radio" id="male" name="gender">
+
+<label for="male">Male</label>
+<br>
+<input type="radio" id="female" name="gender">
+<label for="female">Female</label>
+<br>
+<hr>
+
+<P> check all facilities you want </p>  
+<input type="checkbox"  id="hostel" name="hostel">
+<label for "hostel"> I want hostel</label> 
+<br>
+
+<input type="checkbox" id="transport" name="transport">
+<label for="transport"> I want transport</label>
+<br>
+<br>
+<label for="Address">Enter your address:</label>
+<br>
+<textarea id="Address" name="Address" rows="4" cols="50">
+</textarea>
+<br> 
+<hr>
+
+<label for="ename"> Select your course </label>
+<br>
+<select name-"ename" id-"name"> 
+<option value-AIML">AI&ML</option>
+<option value-"DS">Data Science</option>
+<option value- "CS">Cyber Security</option>
+</select>
+
+<br>
+<br>
+<br>
+<br>
+
+<center>
+<input type="submit" value="<b>Submit</b>">
+</center>
+
+</form>
+</body>
+</html>

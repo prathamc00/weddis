@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Keyframe</title>
+    <style>
+        .container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+       
+
+        .big-object {
+            width: 300px;
+            height: 200px;
+            background-color: rgb(255, 255, 255);
+            position: absolute;
+            border-radius: 100%;
+            animation-name: bigbody;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        .cat-eye {
+            position: absolute;
+            width: 50px;
+            height: 90px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 50%;
+            animation-name: smallbody;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            bottom: 30px;               /* Position the cat eye at the bottom */
+        }
+
+        @keyframes bigbody {
+            0% {
+               
+                transform: translateX(0) translateY(0);
+            }
+
+            25% {
+                
+                transform: translateX(calc(100vw - 100px)) translateY(0);
+            }
+
+            50% {
+               
+                transform: translateX(calc(100vw - 100px)) translateY(calc(100vh - 100px));
+            }
+
+            75% {
+               
+                transform: translateX(0) translateY(calc(100vh - 100px));
+            }
+
+            100% {
+                
+                transform: translateX(0) translateY(0);
+            }
+        }
+
+        @keyframes smallbody {
+            0%, 100% {
+                transform: translateX(200px);
+            }
+
+            50% {
+                transform: translateX(10px);
+            }
+        }
+    </style>
+</head>
+
+<body bgcolor="black">
+            
+            <div class="big-object">
+            <div class="cat-eye"></div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+<HTML>
+
+<Head>
+<title> img from url</title>
+  </head>
+
+<body>
+
+<img src= "E:\College Works\Web Dev\Html imagetag\img.jpg"
+width="1000" height="500">
+</img>
+   </body>
+
+</HTML>
